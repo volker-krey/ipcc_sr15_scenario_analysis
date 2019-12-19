@@ -4,6 +4,8 @@ all_cats:
 - 1.5C high overshoot
 - Lower 2C
 - Higher 2C
+- Lower 2.5C
+- Lower 3C
 - Above 2C
 - no-climate-assessment
 - reference
@@ -16,6 +18,8 @@ all_subcats:
 - Higher 1.5C high overshoot
 - Lower 2C
 - Higher 2C
+- Lower 2.5C
+- Lower 3C
 - Above 2C
 - no-climate-assessment
 - reference
@@ -25,6 +29,8 @@ cats:
 - 1.5C high overshoot
 - Lower 2C
 - Higher 2C
+- Lower 2.5C
+- Lower 3C
 - Above 2C
 cats_15:
 - Below 1.5C
@@ -56,12 +62,14 @@ run_control: !!python/object:pyam.run_control.RunControl
       category:
         1.5C high overshoot: xkcd:darkish blue
         1.5C low overshoot: xkcd:bluish
-        Above 2C: darkgrey
+        Above 3C: darkgrey
         Below 1.5C: xkcd:baby blue
         Higher 2C: xkcd:red
+        Lower 2.5C: xkcd:orange
         Lower 2C: xkcd:orange
+        Lower 3C: xkcd:orange
       subcategory:
-        Above 2C: darkgrey
+        Above 3C: darkgrey
         Below 1.5C (I): xkcd:baby blue
         Below 1.5C (II): xkcd:baby blue
         Higher 1.5C high overshoot: xkcd:darkish blue
@@ -69,7 +77,9 @@ run_control: !!python/object:pyam.run_control.RunControl
         Higher 2C: xkcd:red
         Lower 1.5C high overshoot: xkcd:darkish blue
         Lower 1.5C low overshoot: xkcd:bluish
+        Lower 2.5C: xkcd:orange
         Lower 2C: xkcd:orange
+        Lower 3C: xkcd:orange
     edgecolors:
       marker:
         LED: black
@@ -86,7 +96,7 @@ run_control: !!python/object:pyam.run_control.RunControl
         S2: s
         S5: s
     region_mapping:
-      default: /Applications/anaconda/lib/python3.6/site-packages/pyam/region_mappings/default_mapping.csv
+      default: C:\Users\krey\AppData\Roaming\Python\Python37\site-packages\pyam\region_mappings\default_mapping.csv
 subcats:
 - Below 1.5C (I)
 - Below 1.5C (II)
@@ -96,4 +106,6 @@ subcats:
 - Higher 1.5C high overshoot
 - Lower 2C
 - Higher 2C
+- Lower 2.5C
+- Lower 3C
 - Above 2C
